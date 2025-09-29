@@ -1,0 +1,24 @@
+# Wikipedia Selenium Automation (Java + JUnit 5 + POM)
+
+Este projeto automatiza um fluxo simples no site da [Wikipedia](https://en.wikipedia.org):
+
+- Acessa a página inicial
+- Busca o termo **Laptop**
+- Aguarda sugestões e seleciona a primeira (ou ENTER como fallback)
+- Abre o artigo, lê o título
+- Clica no link **References** no sumário (Table of Contents)
+- Verifica se a URL contém `#References`
+
+## 🚀 Tecnologias
+- Java 17+
+- Selenium 4
+- JUnit 5
+- Gradle
+
+## ▶️ Como rodar
+Clone o repositório e rode:
+
+```bash
+./gradlew test
+# no Windows
+gradlew.bat test
